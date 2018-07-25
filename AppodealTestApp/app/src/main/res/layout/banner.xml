@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bannerLoadingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="isBannerLoadedButton"
+        android:text="@string/loading"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bannerShowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bannerShowButton"
+        android:layout_below="@+id/bannerLoadingButton"
+        android:text="@string/show"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bannerHideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bannerHideButton"
+        android:layout_below="@+id/bannerShowButton"
+        android:text="@string/hide"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.appodeal.ads.BannerView
+        android:id="@+id/appodealBannerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

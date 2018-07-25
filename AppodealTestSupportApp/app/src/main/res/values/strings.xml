@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppodealSupportTestApp</string>
+    <string name="app_key">fcd6fb3dd50fa5ba757289a1a95dcdc7d25345aa354f57e6</string>
+    <string name="stop">Stop</string>
+    <string name="show_native">Show Native</string>
+    <string name="hide_native">Hide Native</string>
+
+</resources>

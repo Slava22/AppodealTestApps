@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfeaf1"
+    android:orientation="vertical"
+    tools:context="com.appodeal.support.test.MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/stop" />
+
+    <LinearLayout
+        android:id="@+id/layoutNativeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showNative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showNativeButton"
+            android:text="@string/show_native" />
+
+        <Button
+            android:id="@+id/hideNative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hideNativeButton"
+            android:text="@string/hide_native" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nativeAdsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutNativeButtons"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

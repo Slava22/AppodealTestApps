@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppodealTestApp</string>
+    <string name="app_key">bd6cdac1369739e55d95a1f0fa7bd941510a00583564d285</string>
+
+    <string name="loading">isLoaded</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/nativeLoadingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="isNativeLoadedButton"
+        android:text="@string/loading"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/nativeShowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nativeShowButton"
+        android:text="@string/show"
+        android:layout_below="@+id/nativeLoadingButton"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/nativeHideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nativeHideButton"
+        android:text="@string/hide"
+        android:layout_below="@+id/nativeShowButton"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/nativeAdsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nativeHideButton"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>
